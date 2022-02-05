@@ -58,7 +58,7 @@
 .txt1 h2{
     margin-bottom: 20px;
     opacity: 0;
-    animation: aaa 1.3s forwards;
+    animation: aaa 2s 1.5s forwards;
 }
 
 @keyframes aaa{
@@ -69,7 +69,7 @@
 
 .txt1 p{
     margin-bottom: 20px;
-    animation: bbb 1s 1s forwards;
+    animation: bbb 1s 3.3s forwards;
     opacity: 0;
 }
 
@@ -94,7 +94,7 @@
     vertical-align: baseline;
     /* background: 0 0; */
 
-    animation: ccc 1s 1.9s infinite;
+    animation: ccc 1s 4.1s infinite;
     opacity: 0;
 }
 
