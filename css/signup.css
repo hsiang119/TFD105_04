@@ -1,0 +1,163 @@
+@import url(../css/reset.css);
+
+@import url(../css/base.css);
+
+/* --------------------------------- */
+.signup-pg{
+
+}
+
+.signup-pg h3{
+    margin-top: 110px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    height: 30px;
+    line-height: 30px;
+    width: 110px;
+    text-align: center;
+    color: #1F3CA1;
+    border-bottom: 1px solid #1F3CA1;
+    margin-bottom: 20px;
+}
+
+.signup-pg .form1{
+    
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+.signup-pg .form1 h2{
+    text-align: center;
+    margin-bottom: 20px;
+
+    animation: qqq 1.3s forwards;
+    opacity: 0;
+}
+
+@keyframes qqq{
+    0%{transform: translateY(-300px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+
+.signup-pg .form1 ul{
+    /* border: 1px soild black; */
+    display: block;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.signup-pg .form1 li{
+    
+}
+
+.signup-pg .form1 p{
+    margin-bottom: 5px;
+}
+
+.signup-pg .form1 input{
+    
+}
+
+.signup-pg .email{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+}
+
+.signup-pg .password{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+}
+
+.signup-pg .password2{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+}
+
+.signup-pg .name{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+}
+
+.signup-pg .phone{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+}
+
+.signup-pg .address{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+}
+
+.signup-pg .submit{
+    /* display: block; */
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 16px;
+    border: 0;
+    background-color: #F5A651;
+    color: white;
+}
+
+.signup-pg .form1 p:not(.a, .b){
+    margin-left: 25px;
+}
+
+.signup-pg .a, .b{
+    /* border: 1px solid black; */
+    font-size: 20px;
+    width: 130px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}

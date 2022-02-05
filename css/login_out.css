@@ -1,0 +1,132 @@
+@import url(../css/reset.css);
+
+@import url(../css/base.css);
+
+/*--login/out--*/
+.login-pg{
+    margin-top: 110px;
+    /* border: 1px solid black; */
+}
+
+.login-pg h3{
+    
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    height: 30px;
+    line-height: 30px;
+    width: 110px;
+    text-align: center;
+    color: #1F3CA1;
+    border-bottom: 1px solid #1F3CA1;
+    margin-bottom: 20px;
+}
+
+.login-pg .top{
+    margin-top: 200px;
+    height: 50px;
+    line-height: 50px;
+    width: 450px;
+    /* border-bottom: 1px solid black; */
+    /* margin-bottom: 40px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+
+    animation: jjj 1s forwards;
+    opacity: 0;
+}
+
+@keyframes jjj{
+    0%{transform: translateY(-300px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+
+.form1{
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    margin-top: 40px;
+    width: 450px;
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+.form1 h2{
+    text-align: center;
+
+    animation: iii 1s .8s forwards;
+    opacity: 0;
+}
+
+@keyframes iii{
+    0%{transform: translateY(600px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+
+.form1 ul{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+
+    /* border: 1px solid #e5e5e5; */
+    /* text-align: center; */
+
+    margin-bottom: 40px;
+}
+
+.form1 li{
+    
+}
+
+.form1 p{
+    padding-left: 22px;
+}
+
+
+.account{
+    width: 350px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.password{
+    width: 350px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login{
+    width: 75px;
+    height: 30px;
+    border: 0;
+    background-color: #F5A651;
+    color: white;
+    /* display: block;
+    margin: 0 auto; */
+    /* margin-top: 20px; */
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.form1 a{
+    display: block;
+    width: 75px;
+    height: 30px;
+    float: right;
+    border: 0;
+    background-color: #F5A651;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-right: 120px;
+}

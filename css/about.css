@@ -1,0 +1,151 @@
+@import url(../css/reset.css);
+
+@import url(./base.css);
+
+/* .about{
+    /* background-image: url(../img/pexels-life-of-pix-9095.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+} */
+
+.about-pg{
+    margin-bottom: 40px;
+}
+
+/* ----------main about-pg 食材------------- */
+
+.about-pg .igr{
+    margin-bottom: 40px;
+}
+
+.about-pg h3{
+    margin-top: 110px;
+    /* border: 1px solid black; */
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    text-align: center;
+    color: #1F3CA1;
+    border-bottom: 1px solid #1F3CA1;
+    margin-bottom: 20px;
+}
+
+.about-pg .igr{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-pg .txt4{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    
+    text-align: center;
+
+    animation: rrr 1.5s 1.8s forwards;
+    opacity: 0;
+}
+
+@keyframes rrr{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.about-pg .txt4 h2{
+    /* border: 1px solid black; */
+    height: 50px;
+    line-height: 50px;
+    width: 80px;
+    border-bottom: 1px solid black;
+    /* margin-bottom: 10px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.about-pg .txt4 p{
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.about-pg .pics3{
+    width: 50%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    font-size: 0;
+    margin-left: auto;
+    /* margin-top: 10px; */
+
+    animation: ggg 1.5s .3s forwards;
+
+    opacity: 0;
+}
+
+@keyframes ggg{
+    0%{transform: translateX(600px); opacity: 0;}
+    /* 30%{transform: translateX();} */
+    100%{transform: translateX(0); opacity: 1;}
+}
+
+.about-pg .pics3 img{
+    width: 100%;
+}
+
+/*------------main about-pg 新鮮------------*/
+
+.about-pg .fre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-pg .txt5{
+    width: 50%;
+    order: 2;
+
+    animation: ttt 1.5s 1.8s forwards;
+    opacity: 0;
+}
+
+@keyframes ttt{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.about-pg .txt5 h2{
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    width: 80px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    /* margin-bottom: 10px; */
+}
+
+.about-pg .txt5 p{
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.about-pg .pics4{
+    width: 50%;
+    height: 380px;
+    order: 1;
+
+    animation: hhh 1.5s .5s forwards;
+    opacity: 0;
+}
+
+@keyframes hhh{
+    0%{transform: translateX(-600px); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+
+.about-pg .pics4 img{
+    width: 100%;
+}

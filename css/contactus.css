@@ -1,0 +1,115 @@
+@import url(../css/reset.css);
+
+@import url(../css/base.css);
+
+/* --------------------------------- */
+.contactus-pg{}
+
+.contactus-pg h3{
+    margin-top: 110px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    text-align: center;
+    color: #1F3CA1;
+    border-bottom: 1px solid #1F3CA1;
+    margin-bottom: 20px;
+}
+
+.contactus-pg form{
+    /* border: 1px solid black; */
+    
+}
+
+.contactus-pg ul{
+    /* border: 1px solid black; */
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.contactus-pg {}
+
+.contactus-pg p{}
+
+.contactus-pg .name{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.contactus-pg .phone{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.contactus-pg .email{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.contactus-pg .content{
+    display: block;
+    width: 350px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.contactus-pg p{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.contactus-pg #file_input{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border: 0;
+    background-color: #F5A651;
+    color: white;
+}
+
+.contactus-pg .submit{
+    display: block;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    background-color: #F5A651;
+    color: white;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.contactus-pg #img_block{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.contactus-pg .email2{
+    margin-left: 25px;
+}
+
+.contactus-pg .phone2{
+    margin-left: 10px;
+}

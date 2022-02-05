@@ -1,0 +1,288 @@
+@import url(../css/reset.css);
+
+@import url(./base.css);
+
+/* ---------banner------------- */
+.banner{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    /* align-items:center; */
+    margin-top: 100px;
+
+    animation: yyy 1.5s .5s forwards;
+    opacity: 0;
+}
+
+@keyframes yyy{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.banner video{
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    opacity: .5;
+
+}
+
+
+/* -----------------slogan------------------ */
+.slogan{
+    /* width: 100%; */
+    /* border: 1px solid black ; */
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    perspective: 500px;
+   
+}
+
+.txt1{
+    /* border: 1px solid black; */
+    width: 50%;
+    box-sizing: border-box;
+    perspective: 500px;
+    text-align: center;
+}
+
+.txt1 h2{
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: aaa 1.3s forwards;
+}
+
+@keyframes aaa{
+    0%{ transform: translateY(500px) rotate(1080deg); opacity: 0;}
+    40%{ transform: translateY(-40px); opacity: .7;}
+    100%{ transform: translateY(0px); opacity: 1;}
+}
+
+.txt1 p{
+    margin-bottom: 20px;
+    animation: bbb 1s 1s forwards;
+    opacity: 0;
+}
+
+@keyframes bbb{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.txt1 a{
+    display: block;
+    box-sizing: border-box;
+    background-color: #F5A651;
+    color: white;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    transition: all .5s;
+    /* border: 1px solid black; */
+    top: 0;
+    overflow: hidden;
+    vertical-align: baseline;
+    /* background: 0 0; */
+
+    animation: ccc 1s 1.9s infinite;
+    opacity: 0;
+}
+
+@keyframes ccc{
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(5px); opacity: 1;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+
+.txt1 a:hover{
+    transform: scale(1.2);
+    top: 1px;
+}
+
+.pics1{
+    margin-left: auto;
+    box-sizing: border-box;
+    width: 600px;
+    height: 400px;   
+}
+
+.pics1 img{
+    display: block;
+    box-sizing: border-box;
+    background-size: cover;
+    max-width: 100%;
+}
+
+/* ------product--------- */
+.container{
+    margin-top: 20px;
+}
+
+.container h2{
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-bottom: 40px;
+
+    
+}
+
+.content{
+    margin-bottom: 40px;
+}
+
+.content ul{
+    display: inline-flex;
+    text-align: center;
+    
+}
+
+.content li{
+    margin-right: 130px;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+
+    transition: all .5s;
+}
+
+.content li:first-child:hover{
+    transform: translateX(10px);
+}
+
+.content li:last-child:hover{
+    transform: translateX(-10px);
+}
+
+.content li:nth-child(2):hover{
+    transform: scale(1.05);
+}
+
+.content img{
+    display: block;
+    height: 250px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.content p{}
+
+.container a{
+    display: block;
+    box-sizing: border-box;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    /* border: 1px solid black; */
+    text-align: center;
+    background-color: #F5A651;
+    color: white;
+    margin: 0 auto;
+
+    margin-bottom: 5px;
+
+    animation: eee 1s infinite;
+}
+
+@keyframes eee{
+    0%{transform: translateY(0);}
+    30%{transform: translateY(5px);}
+    100%{transform: translateY(0);}
+}
+
+/* -------gift box-------- */
+.gift{
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pics2{
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    
+}
+
+.pics2 img{
+    display: block;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.txt2{
+    width: 600px;
+    text-align: center;
+}
+
+.txt2 h2{
+    margin-bottom: 20px;
+}
+
+.txt2 p{
+    margin-bottom: 20px;
+}
+
+.txt2 a{
+    display: block;
+    box-sizing: border-box;
+    width: 80px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    height: 30px;
+    line-height: 30px;
+    transition: all 1s;
+    background-color: #F5A651;
+    color: white;
+
+    animation: fff 1s infinite;
+}
+
+@keyframes fff{
+    0%{transform: translateY(0);}
+    30%{transform: translateY(5px);}
+    100%{transform: translateY(0);}
+}
+
+.txt2 a:hover{}
+
+/* -------location--------- */
+.loc{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.map{
+    margin-right: auto;
+}
+
+.txt3{
+    /* border: 1px solid black; */
+    width: 31%;
+    margin: 0 auto;
+}
+
+.txt3 ul{
+    /* text-align: center; */
+}
+
+.txt3 li{
+
+}
+
+
+

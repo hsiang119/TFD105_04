@@ -1,0 +1,178 @@
+@import url(../css/reset.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana;
+    line-height: 1.6;
+    /* position: relative; */
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 40px;
+    color: #333;
+}
+
+h3{
+    font-size: 24px;
+    color: #333;
+}
+
+
+p{
+    color: #333;
+}
+
+.main-block{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* --------nav----------- */
+
+nav{
+    width: 100vw;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+nav .main-block{
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    height: 100px;
+
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    position: fixed;
+    left: 32px;
+    top: 0;
+    z-index: 5;
+}
+
+nav .main-block h1{
+    width: 75px;
+    height: 75px;
+    /* border: 1px solid black; */
+    
+}
+
+nav .main-block a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav .main-block a:hover{
+    cursor: pointer;
+}
+
+nav .main-block a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+nav .main-block ul{
+    display: flex;
+    width: 600px;
+    /* border: 1px solid black; */
+    font-size: 0;
+    text-align: center;
+}
+
+nav .main-block li{
+    flex-grow: 1;
+    font-size: 0;
+    font-size: 18px;
+    
+}
+
+nav .main-block li:last-child{
+    flex-grow: 0;
+    flex-basis: 90px;
+    height: 30px;
+    /* border: 1px solid black; */
+    /* align-items: flex-end; */
+}
+
+nav .main-block ul a{
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    /* border: 1px solid black; */
+    transition: all .5s;
+    
+}
+
+nav .main-block li:hover a{
+    color: #F5A651;
+}
+
+/* -------footer-------- */
+footer{
+    /* border: 1px solid black; */
+    flex-direction: column;
+    background-color: #F5A651;
+    text-align: center;
+    width: 100%;
+}
+
+.follow{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+
+.follow h3{
+    margin-right: 10px;
+    color: white;
+}
+
+.follow ul{
+    display: flex;
+    
+}
+
+.follow li{
+    margin-right: 10px;
+}
+
+i{
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+.follow a{
+    display: block;
+    width: 40px;
+    /* border: 1px solid black; */
+}
+
+.cop{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cop p{
+    color: white; 
+}
