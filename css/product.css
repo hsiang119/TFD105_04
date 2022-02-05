@@ -43,6 +43,14 @@
     height: 420px;
     box-sizing: border-box;
     padding: 5px;
+
+    animation: uuu 1.5s .5s forwards;
+    opacity: 0;
+}
+
+@keyframes uuu{
+    0%{transform: translateY(-500px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
 }
 
 .des1 li img{
@@ -67,6 +75,14 @@
     height: 420px;
     box-sizing: border-box;
     padding: 5px;
+
+    animation: mmm 1.5s 2.2s forwards;
+    opacity: 0;
+}
+
+@keyframes mmm{
+    0%{transform: translatex(-600px); opacity: 0;}
+    100%{transform: translatex(0); opacity: 1;}
 }
 
 .des2 img{
@@ -124,6 +140,14 @@
     width: 25%;
     height: 420px;
     padding: 5px;
+    
+    animation: nnn 1.5s 3.5s forwards;
+    opacity: 0;
+}
+
+@keyframes nnn{
+    0%{transform: translatex(600px); opacity: 0;}
+    100%{transform: translatex(0); opacity: 1;}
 }
 
 .cake img{
