@@ -36,17 +36,30 @@ p{
     overflow: hidden;
 }
 
-/* --------nav----------- */
-
-nav{
-    width: 100vw;
-    color: white;
-    /* border: 1px solid black; */
+.wrapper{
+    width: 100%;
 }
 
-nav .main-block{
+.out14{
+    width: 1400px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    /* border: 1px solid black; */
+}
+/* --------nav----------- */
+
+/* nav{
+    width: 1400px;
+    height: 100px;
+    color: white;
+    margin: 0 auto;
+    border: 1px solid black;
+} */
+
+.main-block nav{
     /* border: 1px solid black; */
     background-color: white;
+    width: 1200px;
     display: flex;
     height: 100px;
 
@@ -55,36 +68,36 @@ nav .main-block{
     box-sizing: border-box;
 
     position: fixed;
-    left: 32px;
+    /* left: 0; */
     top: 0;
     z-index: 5;
 }
 
-nav .main-block h1{
+nav h1{
     width: 75px;
     height: 75px;
     /* border: 1px solid black; */
-    
+    /* margin-left: 32px; */
 }
 
-nav .main-block a{
+nav a{
     display: block;
     width: 100%;
     height: 100%;
 }
 
-nav .main-block a:hover{
+nav a:hover{
     cursor: pointer;
 }
 
-nav .main-block a img{
+h1 img{
     display: block;
     width: 100%;
     height: 100%;
 
 }
 
-nav .main-block ul{
+nav ul{
     display: flex;
     width: 600px;
     /* border: 1px solid black; */
@@ -92,14 +105,14 @@ nav .main-block ul{
     text-align: center;
 }
 
-nav .main-block li{
+nav li{
     flex-grow: 1;
     font-size: 0;
     font-size: 18px;
     
 }
 
-nav .main-block li:last-child{
+nav li:last-child{
     flex-grow: 0;
     flex-basis: 90px;
     height: 30px;
@@ -107,7 +120,7 @@ nav .main-block li:last-child{
     /* align-items: flex-end; */
 }
 
-nav .main-block ul a{
+nav ul a{
     display: block;
     width: 90px;
     height: 30px;
@@ -117,7 +130,7 @@ nav .main-block ul a{
     
 }
 
-nav .main-block li:hover a{
+nav li:hover a{
     color: #F5A651;
 }
 
