@@ -13,6 +13,7 @@ body{
 a{
     color: #333;
     text-decoration: none;
+    display: block;
 }
 
 h2{
@@ -28,49 +29,37 @@ h3{
 
 p{
     color: #333;
+    font-size: 16px;
 }
 
-.main-block{
+.wrapper{
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.wrapper{
+/* ----------------nav-------------------- */
+
+header{
     width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
 }
 
-.out14{
-    width: 1400px;
-    margin: 0 auto;
-    /* overflow: hidden; */
-    /* border: 1px solid black; */
-}
-/* --------nav----------- */
-
-/* nav{
-    width: 1400px;
-    height: 100px;
-    color: white;
-    margin: 0 auto;
-    border: 1px solid black;
-} */
-
-.main-block nav{
+nav{
     /* border: 1px solid black; */
     background-color: white;
     width: 1200px;
+    margin: 0 auto;
     display: flex;
     height: 100px;
 
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-
-    position: fixed;
-    /* left: 0; */
-    top: 0;
-    z-index: 5;
 }
 
 nav h1{
@@ -94,7 +83,6 @@ h1 img{
     display: block;
     width: 100%;
     height: 100%;
-
 }
 
 nav ul{
@@ -109,8 +97,7 @@ nav li{
     flex-grow: 1;
     font-size: 0;
     font-size: 18px;
-    
-}
+} 
 
 nav li:last-child{
     flex-grow: 0;
@@ -125,22 +112,24 @@ nav ul a{
     width: 90px;
     height: 30px;
     line-height: 30px;
-    /* border: 1px solid black; */
-    transition: all .5s;
-    
+    /* border: 1px solid black; */    
 }
 
 nav li:hover a{
-    color: #F5A651;
+    background-color: #F5A651;
+    color: white;
 }
 
 /* -------footer-------- */
+
 footer{
     /* border: 1px solid black; */
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
     flex-direction: column;
     background-color: #F5A651;
     text-align: center;
-    width: 100%;
 }
 
 .follow{

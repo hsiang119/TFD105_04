@@ -1,5 +1,3 @@
-@import url(../css/reset.css);
-
 @import url(../css/base.css);
 
 /* .about{
@@ -9,17 +7,17 @@
     background-position: center center;
 } */
 
-.about-pg{
-    margin-bottom: 40px;
+
+nav > ul > li:first-child > a{
+    color:#F5A651;
 }
 
+nav > ul > li:first-child > a:hover{
+    color: white;
+}
 /* ----------main about-pg 食材------------- */
 
-.about-pg .igr{
-    margin-bottom: 40px;
-}
-
-.about-pg h3{
+.main{
     margin-top: 110px;
     /* border: 1px solid black; */
     height: 30px;
@@ -31,15 +29,16 @@
     margin-bottom: 20px;
 }
 
-.about-pg .igr{
+.igr{
     /* border: 1px solid black; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
-.about-pg .txt4{
+.igr .txt4{
     /* border: 1px solid black; */
     margin: 0 auto;
     
@@ -54,7 +53,7 @@
     100%{opacity: 1;}
 }
 
-.about-pg .txt4 h2{
+.igr .txt4 h2{
     /* border: 1px solid black; */
     height: 50px;
     line-height: 50px;
@@ -65,12 +64,12 @@
     box-sizing: border-box;
 }
 
-.about-pg .txt4 p{
+.igr .txt4 p{
     box-sizing: border-box;
     margin-top: 20px;
 }
 
-.about-pg .pics3{
+.igr .pics3{
     width: 50%;
     /* border: 1px solid black; */
     box-sizing: border-box;
@@ -89,21 +88,22 @@
     100%{transform: translateX(0); opacity: 1;}
 }
 
-.about-pg .pics3 img{
+.igr .pics3 img{
     width: 100%;
 }
 
 /*------------main about-pg 新鮮------------*/
 
-.about-pg .fre{
+.fre{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+}    
 
-.about-pg .txt5{
+.fre .txt5{
     width: 50%;
     order: 2;
 
@@ -116,7 +116,7 @@
     100%{opacity: 1;}
 }
 
-.about-pg .txt5 h2{
+.fre .txt5 h2{
     box-sizing: border-box;
     height: 50px;
     line-height: 50px;
@@ -126,13 +126,13 @@
     /* margin-bottom: 10px; */
 }
 
-.about-pg .txt5 p{
+.fre .txt5 p{
     text-align: center;
     box-sizing: border-box;
     margin-top: 20px;
 }
 
-.about-pg .pics4{
+.fre .pics4{
     width: 50%;
     height: 380px;
     order: 1;
@@ -146,6 +146,7 @@
     100%{transform: translateX(0); opacity: 1;}
 }
 
-.about-pg .pics4 img{
+.fre .pics4 img{
     width: 100%;
+    font-size: 0;
 }

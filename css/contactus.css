@@ -1,11 +1,23 @@
-@import url(../css/reset.css);
-
 @import url(../css/base.css);
 
-/* --------------------------------- */
-.contactus-pg{}
+nav > ul > li:nth-child(5) > a{
+    color:#F5A651;
+}
 
-.contactus-pg h3{
+nav > ul > li:nth-child(5) > a:hover{
+    color: white;
+}
+
+/* body{
+    background-color: #F7D8B0;
+    opacity: .3;
+} */
+
+
+/* ----------- sign up ------------- */
+
+
+.cnt{
     margin-top: 110px;
     box-sizing: border-box;
     /* border: 1px solid black; */
@@ -18,23 +30,15 @@
     margin-bottom: 20px;
 }
 
-.contactus-pg form{
-    /* border: 1px solid black; */
-    
-}
 
-.contactus-pg ul{
+.form{
     /* border: 1px solid black; */
     width: 400px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.contactus-pg {}
-
-.contactus-pg p{}
-
-.contactus-pg .name{
+.name{
     display: block;
     width: 350px;
     height: 30px;
@@ -42,9 +46,11 @@
     font-size: 16px;
     margin-bottom: 10px;
     padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
 }
 
-.contactus-pg .phone{
+.phone{
     display: block;
     width: 350px;
     height: 30px;
@@ -52,9 +58,11 @@
     font-size: 16px;
     margin-bottom: 10px;
     padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
 }
 
-.contactus-pg .email{
+.email{
     display: block;
     width: 350px;
     height: 30px;
@@ -62,9 +70,11 @@
     font-size: 16px;
     margin-bottom: 10px;
     padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
 }
 
-.contactus-pg .content{
+.content{
     display: block;
     width: 350px;
     height: 30px;
@@ -72,14 +82,16 @@
     font-size: 16px;
     margin-bottom: 10px;
     padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
 }
 
-.contactus-pg p{
+p{
     margin-bottom: 10px;
     margin-left: 25px;
 }
 
-.contactus-pg #file_input{
+#file_input{
     display: block;
     margin-bottom: 10px;
     margin-left: 25px;
@@ -88,7 +100,7 @@
     color: white;
 }
 
-.contactus-pg .submit{
+.submit{
     display: block;
     width: 75px;
     height: 30px;
@@ -101,15 +113,15 @@
     margin-top: 20px;
 }
 
-.contactus-pg #img_block{
+#img_block{
     margin-left: 25px;
     margin-bottom: 10px;
 }
 
-.contactus-pg .email2{
+.email2{
     margin-left: 25px;
 }
 
-.contactus-pg .phone2{
+.phone2{
     margin-left: 10px;
 }

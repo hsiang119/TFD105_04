@@ -1,10 +1,16 @@
-@import url(../css/reset.css);
-
 @import url(../css/base.css);
 
+
+nav > ul > li:nth-child(2) > a{
+    color:#F5A651;
+}
+
+nav > ul > li:nth-child(2) > a:hover{
+    color: white;
+}
 /* -------product dessert---------- */
 
-.product-pg h3{
+.pro{
     margin-top: 110px;
     box-sizing: border-box;
     /* border: 1px solid black; */
@@ -93,7 +99,6 @@
 
 .des2 a{
     background-image: url(../img/matchacookie2.jpg);
-    display: block;
     font-size: 0;
     width: 288px;
     height: 200px;
@@ -173,7 +178,6 @@
 
 .cake a{
     background-image: url(../img/chocolatecake\ 1.jpg);
-    display: block;
     font-size: 0;
     width: 288px;
     height: 200px;
@@ -199,6 +203,7 @@
     /* margin: auto; */
     /* border: 1px solid black; */
     margin-bottom: 40px;
+    height: 372px;
 }
 
 .wrap h2{

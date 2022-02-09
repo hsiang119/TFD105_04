@@ -1,10 +1,15 @@
-@import url(../css/reset.css);
-
 @import url(../css/base.css);
 
+nav > ul > li:nth-child(4) > a{
+    color:#F5A651;
+}
+
+nav > ul > li:nth-child(4) > a:hover{
+    color: white;
+}
 /* ----------------------------- */
 
-.questions-pg h3{
+.que{
     margin-top: 110px;
     box-sizing: border-box;
     /* border: 1px solid black; */
@@ -17,7 +22,7 @@
     margin-bottom: 20px;
 }
 
-.questions-pg .qa{
+.qa{
     border: 1px solid #e5e5e5;
     height: 350px;
     width: 500px;
@@ -27,25 +32,24 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
 }
 
-.questions-pg .qa p{
+.qa p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.questions-pg .qa a{
-    display: block;
+.qa a{
     width: 300px;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #e5e5e5;
     margin: 0 auto;
     margin-bottom: 10px;
     /* border: 1px solid black; */
     position: relative;
 }
 
-.questions-pg .qa a:hover{
+.qa a:hover{
     position: relative;
     top: 2px;
     left: 2px;
@@ -62,7 +66,7 @@
     margin: auto;
 } */
 
-.questions-pg .qa .q1::after{
+.qa .q1::after{
     content: "";
     position: absolute;
     width: 10px;
@@ -73,7 +77,7 @@
     margin: auto;
 }
 
-.questions-pg .qa .q1::before{
+.qa .q1::before{
     content: "";
     position: absolute;
     width: 2px;
@@ -84,7 +88,7 @@
     margin: auto;
 }
 
-.questions-pg .qa .q2::after{
+.qa .q2::after{
     content: "";
     position: absolute;
     width: 10px;
@@ -95,7 +99,7 @@
     margin: auto;
 }
 
-.questions-pg .qa .q2::before{
+.qa .q2::before{
     content: "";
     position: absolute;
     width: 2px;
@@ -106,7 +110,7 @@
     margin: auto;
 }
 
-.questions-pg .qa .q3::after{
+.qa .q3::after{
     content: "";
     position: absolute;
     width: 10px;
@@ -117,7 +121,7 @@
     margin: auto;
 }
 
-.questions-pg .qa .q3::before{
+.qa .q3::before{
     content: "";
     position: absolute;
     width: 2px;
@@ -128,10 +132,25 @@
     margin: auto;
 }
 
-.questions-pg #hide{
+#hide{
     margin-bottom: 10px;
+    /* border: 1px solid black; */
+    width: 380px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.questions-pg #hide2{
+#hide2{
     margin-bottom: 10px;
+    /* border: 1px solid black; */
+    width: 380px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#hide3{
+    /* border: 1px solid black; */
+    width: 380px;
+    margin: 0 auto;
+    text-align: left;
 }

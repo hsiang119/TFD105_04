@@ -1,13 +1,15 @@
-@import url(../css/reset.css);
-
 @import url(../css/base.css);
 
-/* --------------------------------- */
-.signup-pg{
-
+nav > ul > li:last-child > a{
+    color:#F5A651;
 }
 
-.signup-pg h3{
+nav > ul > li:last-child > a:hover{
+    color: white;
+}
+/* --------------------------------- */
+
+.bre{
     margin-top: 110px;
     box-sizing: border-box;
     /* border: 1px solid black; */
@@ -20,15 +22,7 @@
     margin-bottom: 20px;
 }
 
-.signup-pg .form1{
-    
-    width: 450px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    
-}
-
-.signup-pg .form1 h2{
+.siu{
     text-align: center;
     margin-bottom: 20px;
 
@@ -41,29 +35,30 @@
     100%{transform: translateY(0); opacity: 1;}
 }
 
-.signup-pg .form1 ul{
-    /* border: 1px soild black; */
+.form2{
+    border: 1px soild black;
     display: block;
     width: 400px;
     height: 600px;
     margin: 0 auto;
     border: 1px solid #e5e5e5;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    margin-bottom: 40px;
 }
 
-.signup-pg .form1 li{
+.form2 li{
     
 }
 
-.signup-pg .form1 p{
+.form2 p{
     margin-bottom: 5px;
 }
 
-.signup-pg .form1 input{
+.form2 input{
     
 }
 
-.signup-pg .email{
+.form2 .email{
     display: block;
     width: 350px;
     height: 30px;
@@ -75,7 +70,7 @@
     padding-left: 10px;
 }
 
-.signup-pg .password{
+.form2 .password{
     display: block;
     width: 350px;
     height: 30px;
@@ -87,7 +82,7 @@
     padding-left: 10px;
 }
 
-.signup-pg .password2{
+.form2 .password2{
     display: block;
     width: 350px;
     height: 30px;
@@ -99,7 +94,7 @@
     padding-left: 10px;
 }
 
-.signup-pg .name{
+.form2 .name{
     display: block;
     width: 350px;
     height: 30px;
@@ -111,7 +106,7 @@
     padding-left: 10px;
 }
 
-.signup-pg .phone{
+.form2 .phone{
     display: block;
     width: 350px;
     height: 30px;
@@ -123,7 +118,7 @@
     padding-left: 10px;
 }
 
-.signup-pg .address{
+.form2 .address{
     display: block;
     width: 350px;
     height: 30px;
@@ -134,7 +129,7 @@
     padding-left: 10px;
 }
 
-.signup-pg .submit{
+.form2 .submit{
     /* display: block; */
     width: 75px;
     height: 30px;
@@ -148,11 +143,11 @@
     color: white;
 }
 
-.signup-pg .form1 p:not(.a, .b){
+.form2 p:not(.a, .b){
     margin-left: 25px;
 }
 
-.signup-pg .a, .b{
+.form2 .a, .b{
     /* border: 1px solid black; */
     font-size: 20px;
     width: 130px;
