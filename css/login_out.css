@@ -1,4 +1,6 @@
 @import url(../css/base.css);
+@import url(../css/breadcrumb.css);
+
 
 nav > ul > li:last-child > a{
     color:#F5A651;
@@ -70,17 +72,6 @@ nav > ul > li:last-child > a:hover{
     100%{transform: translateY(0); opacity: 1;}
 }
 
-.form1 ul{
-    display: block;
-    width: 400px;
-    height: 200px;
-    margin: 0 auto;
-
-    /* border: 1px solid #e5e5e5; */
-    /* text-align: center; */
-
-    margin-bottom: 40px;
-}
 
 .form1 li{
     
@@ -91,25 +82,47 @@ nav > ul > li:last-child > a:hover{
 }
 
 
-.account{
+input.account{
     width: 350px;
     height: 30px;
     font-size: 16px;
     padding-left: 10px;
     display: block;
     margin: 0 auto;
+    outline: 0;
+    border-radius: 5px;
+    /* border-color: #F5A651; */
+    transition: all 1s;
 }
 
-.password{
+input.account:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+}
+
+input.password{
     width: 350px;
     height: 30px;
     font-size: 16px;
     padding-left: 10px;
     display: block;
     margin: 0 auto;
+    outline: 0;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+input.password:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
 }
 
 .login{
+    box-sizing: border-box;
     width: 75px;
     height: 30px;
     border: 0;
@@ -118,22 +131,116 @@ nav > ul > li:last-child > a:hover{
     /* display: block;
     margin: 0 auto; */
     /* margin-top: 20px; */
-    float: left;
+    /* float: left; */
+    /* display: flex; */
     text-align: center;
     font-size: 16px;
+    /* margin-top: 20px; */
+    /* margin-left: 140px; */
+    border-radius: 5px;
+    /* appearance: none; */
+    -webkit-appearance: none;
+    /* border-radius: 0; */
+}
+
+ul.form1 > li:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 140px;
 }
 
 .form1 a{
     width: 75px;
     height: 30px;
-    float: right;
     border: 0;
     background-color: #F5A651;
     color: white;
     text-align: center;
     line-height: 30px;
-    margin-top: 20px;
-    margin-right: 140px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.form1 .login{
+    margin-right: 10px;
+}
+
+/*---------- Media Query------- */
+/* ----------- 小於576px ------------- */
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+        width: 100%;
+    }
+    .top{
+        font-size: 26.8px;
+        /* border: 1px solid black; */
+        width: 100%;
+        text-align: center;
+    }
+    .form1{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .form1 h2{
+        /* border: 1px solid black; */
+        font-size: 26.8px;
+    }
+    .form1 p{
+        /* border: 1px solid black; */
+        width: 350px;
+        margin: 0 auto;
+        padding: 0;
+    } 
+    ul.form1 > li:nth-of-type(3){
+        /* margin: 0; */
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form1 a{
+        /* border: 1px solid black; */
+        margin-left: 10px;
+    }
+    .form1 .login{
+        margin-right: 10px;
+    }
+}
+
+
+/* ---------- 介於576px ~ 768px -------------- */
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    div.wrapper{
+        width: 540px;
+    }
+    
+}
+
+
+/* ----------- 介於768px ~ 992px ------------- */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    div.wrapper{
+        width: 720px;
+    }
+    
+}
+
+
+/* ---------- 介於992xp ~ 1200px ------------- */
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    div.wrapper{
+        width: 960px;
+    }
+    
+}
+
+
+/* -------------------- 介於1200px ~ 1400px -------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    div.wrapper{
+        width: 1140px;
+    }
+    
 }
