@@ -1,5 +1,5 @@
 @import url(../css/base.css);
-
+@import url(../css/breadcrumb.css);
 /* .about{
     /* background-image: url(../img/pexels-life-of-pix-9095.jpg);
     background-repeat: no-repeat;
@@ -17,9 +17,9 @@ nav > ul > li:first-child > a:hover{
 }
 /* ----------main about-pg 食材------------- */
 
-.main{
+/* .main{
     margin-top: 110px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     height: 30px;
     line-height: 30px;
     width: 100px;
@@ -27,7 +27,7 @@ nav > ul > li:first-child > a:hover{
     color: #1F3CA1;
     border-bottom: 1px solid #1F3CA1;
     margin-bottom: 20px;
-}
+}  */
 
 .igr{
     /* border: 1px solid black; */
@@ -35,17 +35,20 @@ nav > ul > li:first-child > a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .igr .txt4{
     /* border: 1px solid black; */
+    width: 50%;
     margin: 0 auto;
     
     text-align: center;
 
     animation: rrr 1.5s 1.8s forwards;
     opacity: 0;
+    height: auto;
 }
 
 @keyframes rrr{
@@ -84,12 +87,12 @@ nav > ul > li:first-child > a:hover{
 
 @keyframes ggg{
     0%{transform: translateX(600px); opacity: 0;}
-    /* 30%{transform: translateX();} */
+    30%{transform: translateX();}
     100%{transform: translateX(0); opacity: 1;}
 }
 
 .igr .pics3 img{
-    width: 100%;
+    /* width: 100%; */
 }
 
 /*------------main about-pg 新鮮------------*/
@@ -107,14 +110,14 @@ nav > ul > li:first-child > a:hover{
     width: 50%;
     order: 2;
 
-    animation: ttt 1.5s 1.8s forwards;
-    opacity: 0;
+    /* animation: ttt 1.5s 1.8s forwards;
+    opacity: 0; */
 }
 
-@keyframes ttt{
+/* @keyframes ttt{
     0%{opacity: 0;}
     100%{opacity: 1;}
-}
+} */
 
 .fre .txt5 h2{
     box-sizing: border-box;
@@ -134,19 +137,220 @@ nav > ul > li:first-child > a:hover{
 
 .fre .pics4{
     width: 50%;
-    height: 380px;
+    height: auto;
     order: 1;
 
-    animation: hhh 1.5s .5s forwards;
-    opacity: 0;
+    /* animation: hhh 1.5s .5s forwards;
+    opacity: 0; */
 }
 
-@keyframes hhh{
+/* @keyframes hhh{
     0%{transform: translateX(-600px); opacity: 0;}
     100%{transform: translateX(0); opacity: 1;}
-}
+} */
 
 .fre .pics4 img{
     width: 100%;
     font-size: 0;
 }
+
+/*---------- Media Query------- */
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+        width: 100%;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .igr{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .igr .txt4{
+        border: 1px solid #F5A651;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+    .igr .txt4 h2{
+        /* border: 1px solid black; */
+        width: 80px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .igr .txt4 p{
+        width: 88%;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .igr .pics3{
+        min-width: 100%;
+        order: 0;
+        margin-bottom: 20px;
+    }
+    .fre{
+        flex-direction: column;
+    }
+    .fre .txt5{
+        border: 1px solid #F5A651;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+        width: 100%;
+    }
+    .fre .txt5 h2{
+        /* border: 1px solid black; */
+        width: 90px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 80px;
+    }
+    .fre .txt5 p{
+        /* border: 1px solid black; */
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .fre .pics4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    div.wrapper{
+        width: 540px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .igr{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .igr .txt4{
+        border: 1px solid #F5A651;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+    .igr .txt4 h2{
+        /* border: 1px solid black; */
+        width: 80px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .igr .txt4 p{
+        width: 88%;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .igr .pics3{
+        min-width: 100%;
+        order: 0;
+        margin-bottom: 20px;
+    }
+    .fre{
+        flex-direction: column;
+    }
+    .fre .txt5{
+        border: 1px solid #F5A651;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+        width: 100%;
+    }
+    .fre .txt5 h2{
+        /* border: 1px solid black; */
+        width: 90px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 80px;
+    }
+    .fre .txt5 p{
+        /* border: 1px solid black; */
+        width: 63%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .fre .pics4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    div.wrapper{
+        width: 720px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .igr .txt4 h2{
+        /* border: 1px solid black; */
+        width: 60px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 26.8px;
+        margin-bottom: 10px;
+    }
+    .igr .txt4 p{
+        /* border: 1px solid black; */
+        font-size: 14px;
+        width: 72%;
+        margin: 0 auto;
+    }
+    .fre .txt5 h2{
+        text-align: center;
+        width: 60px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 26.8px;
+        margin-bottom: 10px;
+    }
+    .fre .txt5 p{
+        font-size: 14px;
+        margin: 0 auto;
+        width: 82%;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    div.wrapper{
+        width: 960px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    div.wrapper{
+        width: 1140px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .igr{
+        width: 100%;
+    }
+}
+  
