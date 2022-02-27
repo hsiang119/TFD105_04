@@ -1,5 +1,5 @@
 @import url(../css/base.css);
-
+@import url(../css/breadcrumb.css);
 
 nav > ul > li:nth-child(2) > a{
     color:#F5A651;
@@ -8,23 +8,26 @@ nav > ul > li:nth-child(2) > a{
 nav > ul > li:nth-child(2) > a:hover{
     color: white;
 }
-/* -------product dessert---------- */
 
-.pro{
-    margin-top: 110px;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-    height: 30px;
-    line-height: 30px;
-    width: 50px;
-    text-align: center;
-    color: #1F3CA1;
-    border-bottom: 1px solid #1F3CA1;
-    margin-bottom: 20px;
+.breadcrumb p{
+    /* border: 1px solid red; */
+    flex-basis: 40px;
+    line-height: 25px;
+    /* font-size: 14px; */
 }
+
+body{
+    /* background-image: url("../img/Mask\ Group.svg"); */
+    /* background-position: center center; */
+    /* background-color: #DB9666; */
+}
+
+/* -------product dessert---------- */
 
 .des1{
     margin-bottom: 40px;
+    width: 100%;
+    /* border: 1px solid red; */
 }
 
 .des1 h2{
@@ -34,94 +37,144 @@ nav > ul > li:nth-child(2) > a:hover{
     border-bottom: 1px solid black;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .des1 ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 100%;
 }
 
-.des1 li{
-    border: 1px solid #e5e5e5;
+.flip{
+    /* border: 1px solid #e5e5e5; */
     width: 300px;
-    height: 420px;
+    height: 280px;
     box-sizing: border-box;
-    padding: 5px;
-
-    animation: uuu 1.5s .5s forwards;
-    opacity: 0;
+    /* padding: 5px; */
+    border-radius: 5px;
+    perspective: 1000px;
+    backface-visibility: hidden;
+    position: relative;
+    /* animation: uuu 1.5s .5s forwards;
+    opacity: 0; */
+    margin-bottom: 20px;
 }
 
-@keyframes uuu{
+
+/* @keyframes uuu{
     0%{transform: translateY(-500px); opacity: 0;}
     100%{transform: translateY(0); opacity: 1;}
-}
+} */
 
-.des1 li img{
+.flip img{
     width: 100%;
-    height: 200px;
+    height: 220px;
     font-size: 0;
 }
 
+.front{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid greenyellow; */
+    transform: rotateY(0deg);
+    /* color: white; */
+}
+
+.flip p{
+    /* border: 1px solid red; */
+    height: 47px; 
+    text-align: center;
+    line-height: 47px;
+    width: 100%;
+    background-color: #F6EFE7;
+    /* color: white; */
+}
+
+
+.flip > a{
+    transition: .4s ease-in-out;
+}
+
+.flip:hover .front{
+    transform: rotateY(360deg);
+}
+
+.flip:hover .back{
+    transform: rotateY(720deg);
+}
+
+
+
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    /* background-color: #F6EFE7; */
+}
+
+/* ------------ des2 ------------------ */
+
 .des2{
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .des2 ul{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 100%;
 }
 
-.des2 li{
-    border: 1px solid #e5e5e5;
-    width: 300px;
-    height: 420px;
-    box-sizing: border-box;
-    padding: 5px;
 
-    animation: mmm 1.5s 2.2s forwards;
-    opacity: 0;
-}
 
-@keyframes mmm{
+/* @keyframes mmm{
     0%{transform: translatex(-600px); opacity: 0;}
     100%{transform: translatex(0); opacity: 1;}
-}
+} */
 
-.des2 img{
-    width: 100%;
-    height: 200px;
-    font-size: 0;
-}
+
 
 .des2 a{
-    background-image: url(../img/matchacookie2.jpg);
-    font-size: 0;
-    width: 288px;
-    height: 200px;
-    box-sizing: border-box;
+    /* background-image: url(../img/matchacookie2.jpg); */
+    /* font-size: 0; */
+    /* width: 288px; */
+    /* border: 1px solid red; */
+    /* height: 420px; */
+    /* box-sizing: border-box; */
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 16px;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* font-size: 16px; */
+}
+
+.des2 .front{
+    /* border: 1px solid red; */
 }
 
 .des2 a:hover{
-    cursor: default;
-    background-image: url(../img/chococookie2.jpg);
+    /* cursor: default; */
+    /* background-image: url(../img/chococookie2.jpg); */
 }
 
-.des2 a p{
-    padding-top: 205px;
+.des2 li:last-child p{
+    /* padding-top: 205px; */
+    /* height: 200px; */
+}
+
+.des2 p{
+    /* height: 200px; */
 }
 
 /* ------product cake-------- */
 
 .cake{
     margin-bottom: 40px;
+    width: 100%;
+    /* border: 1px solid black; */
 }
 
 .cake h2{
@@ -131,79 +184,85 @@ nav > ul > li:nth-child(2) > a:hover{
     border-bottom: 1px solid black;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .cake ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 100%;
 }
 
-.cake li{
+/* .cake li{
     border: 1px solid #e5e5e5;
     box-sizing: border-box;
     width: 25%;
     height: 420px;
-    padding: 5px;
+    /* padding: 5px; */
     
-    animation: nnn 1.5s 3.5s forwards;
-    opacity: 0;
-}
+    /* animation: nnn 1.5s 3.5s forwards;
+    opacity: 0; */
+    
 
-@keyframes nnn{
+
+/* @keyframes nnn{
     0%{transform: translatex(600px); opacity: 0;}
     100%{transform: translatex(0); opacity: 1;}
-}
+} */
 
-.cake img{
+/* .cake img{
     width: 100%;
-    height: 200px;
+    height: 220px;
     font-size: 0;
-}
+} */
 
 .cake p{
     /* border: 1px solid black; */
+    /* height: 200px; */
 }
 
 .cake li .chocake{
-    padding-top: 205px;
-    box-sizing: border-box;
+    /* padding-top: 205px; */
+    /* box-sizing: border-box; */
     /* font-size: 0; */
 }
 
-.cake li:last-child{
+/* .cake li:last-child{
     margin-right: 0;
 }
-    
+     */
 
 .cake a{
-    background-image: url(../img/chocolatecake\ 1.jpg);
-    font-size: 0;
-    width: 288px;
-    height: 200px;
-    box-sizing: border-box;
+    /* background-image: url(../img/chocolatecake\ 1.jpg); */
+    /* font-size: 0; */
+    /* width: 288px; */
+    /* height: 200px; */
+    /* box-sizing: border-box; */
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 16px;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* font-size: 16px; */
     /* margin-right: 0; */
 
     /* height: 200px; */
     /* border: 1px solid black; */
 }
 
-.cake li a:hover{
-    background-image: url(../img/matchamillecrepecake.png);
-    cursor: default;
+.cake li:hover a{
+    /* background-image: url(../img/matchamillecrepecake.png); */
+    /* cursor: default; */
 }
 
 /* ------timeline---------- */
 
-.wrap{
+div.wrap{
     /* margin: auto; */
     /* border: 1px solid black; */
-    margin-bottom: 40px;
-    height: 372px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 440px;
 }
 
 .wrap h2{
@@ -218,12 +277,14 @@ nav > ul > li:nth-child(2) > a:hover{
 .timeline{
     padding: 40px 0;
     /* border: 1px solid black; */
+    height: auto; 
+    /* margin-bottom: 60px; */
 }
 
 .timeline a{
     display: block;
-    width: 150px;
-    height: 100px;
+    /* width: 150px; */
+    /* height: 100px; */
     /* border: 1px solid black; */
     /* line-height: 100px; */
     cursor: default;
@@ -233,29 +294,29 @@ nav > ul > li:nth-child(2) > a:hover{
     background-image: url(../img/strawberry.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: 180px;
 }
 
 .timeline > li:nth-child(2) > a{
-    background-image: url(../img/mango.jpg);
+    background-image: url(../img/mango2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: 180px;
 }
 
 .timeline > li:last-child > a{
     background-image: url(../img/kiwi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: 180px;
 }
 
 
 .timeline li:nth-child(odd) a{
-    margin-left: 180px;
+    margin-left: 80px;
 }
 
 .timeline li:nth-child(even) a{
@@ -268,7 +329,7 @@ nav > ul > li:nth-child(2) > a:hover{
     width: 50%;
     box-sizing: border-box;
     padding: 20px 0;
-    /* border: 1px soild red; */
+    /* border: 1px solid red; */
     
     /* border: 1px soild black; */
     position: relative;
@@ -291,11 +352,15 @@ nav > ul > li:nth-child(2) > a:hover{
 .timeline li p{
     color: white;
     text-align: center;
-    /* border: 1px solid white; */
+    /* border: 1px solid black; */
     /* margin-top: 25px; */
     /* display: flex;
     align-items: center; */
-    padding: 25px;
+    padding: 65px;
+    width: 100%;
+    height: 100%;
+    /* line-height: 100px; */
+    /* margin: auto; */
 }
 
 .timeline li p::after{
@@ -349,9 +414,302 @@ nav > ul > li:nth-child(2) > a:hover{
 }
 
 .timeline li:nth-child(even)::before{
-    left: -5px;
+    left: -5px; 
     /* top: 60px; */
 }
 
+/* ------手機版輪播------- */
+section{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    display: none;
+}
 
+section .flip{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.owl-item-active{
+    margin: 0;
+}
+
+/*--------- Media Query --------- */
+
+
+/* ----------- 小於576px ------------- */
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+        width: 100%;
+    }
+    .des1 ul{
+        justify-content: center;
+    }
+    .flip{
+        margin-bottom: 20px;
+    }
+    .cake li{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .timeline > li:first-child > a{
+        background-image: url(../img/strawberry.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+    }
+    
+    .timeline > li:nth-child(2) > a{
+        background-image: url(../img/mango2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+    }
+    
+    .timeline > li:last-child > a{
+        background-image: url(../img/kiwi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+    }
+    .timeline li:nth-child(odd) a{
+        margin-left: 0;
+        /* z-index: 1; */
+    }
+    .timeline li:nth-child(even) a{
+        margin-left: calc(100% - 150px);
+        /* padding-left: 50px; */
+        /* border: 1px solid black; */
+    }
+    .timeline li p::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 150px);
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .timeline li:nth-child(2) p::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 150px);
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .timeline li p{
+        color: white;
+        text-align: center;
+        padding: 0;
+        width: 80px;
+        height: 50px;
+        margin: auto;
+        padding-top: 25px;
+    }
+    div.wrap{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 270px;
+    }
+    .des1 ul{
+        display: none;
+    }
+    .des1 h2{
+        margin-bottom: 0;
+    }
+    section{
+        display: block;
+    }
+    .cake ul{
+        display: none;
+    }
+}
+
+
+/* ---------- 介於576px ~ 768px -------------- */
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    div.wrapper{
+        width: 540px;
+    }
+    .des1 ul{
+        justify-content: center;
+    }
+    .flip{
+        margin-bottom: 20px;
+    }
+    .cake li{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+    .timeline > li:first-child > a{
+        background-image: url(../img/strawberry.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+    }
+    
+    .timeline > li:nth-child(2) > a{
+        background-image: url(../img/mango2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+    }
+    
+    .timeline > li:last-child > a{
+        background-image: url(../img/kiwi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+    }
+    .timeline li:nth-child(odd) a{
+        margin-left: 0;
+        /* z-index: 1; */
+    }
+    .timeline li:nth-child(even) a{
+        margin-left: 30px;
+        /* padding-left: 50px; */
+        /* border: 1px solid black; */
+    }
+    .timeline li p::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 120px;
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .timeline li:nth-child(2) p::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 130px;
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .timeline li p{
+        color: white;
+        text-align: center;
+        padding: 0;
+        width: 80px;
+        height: 50px;
+        margin: auto;
+        padding-top: 25px;
+    }
+    div.wrap{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 270px;
+    }
+    .timeline{
+        /* margin-bottom: 20px; */
+    }
+    .des1 ul{
+        display: none;
+    }
+    .des1 h2{
+        margin-bottom: 0;
+    }
+    .cake ul{
+        display: none;
+    }
+    section{
+        display: block;
+    }   
+}
+
+
+/* ----------- 介於768px ~ 992px ------------- */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    div.wrapper{
+        width: 720px;
+    }
+    .timeline > li:first-child > a{
+        background-image: url(../img/strawberry.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 180px;
+    }
+    
+    .timeline > li:nth-child(2) > a{
+        background-image: url(../img/mango2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 180px;
+    }
+    
+    .timeline > li:last-child > a{
+        background-image: url(../img/kiwi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 180px;
+    }
+    .timeline li:nth-child(odd) a{
+        margin-left: 0;
+    }
+    .timeline li:nth-child(even) a{
+        margin-left: 10px;
+    }
+    .timeline li p::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 110px;
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+/* ------------------- 介於992xp ~ 1200px --------------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    div.wrapper{
+        width: 960px;
+    }
+    .timeline li:nth-child(odd) a{
+        margin-left: 0;
+    }
+    .timeline li:nth-child(even) a{
+        margin-left: 130px;
+    }
+    .timeline li p::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 230px;
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+/* -------------------- 介於1200px ~ 1400px ----------------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    div.wrapper{
+        width: 1140px;
+    }
+    .timeline li:nth-child(odd) a{
+        margin-left: 49px;
+    }
+}
 
