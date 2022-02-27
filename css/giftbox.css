@@ -1,4 +1,5 @@
 @import url(../css/base.css);
+@import url(../css/breadcrumb.css);
 
 nav > ul > li:nth-child(3) > a{
     color:#F5A651;
@@ -7,6 +8,14 @@ nav > ul > li:nth-child(3) > a{
 nav > ul > li:nth-child(3) > a:hover{
     color: white;
 }
+
+.breadcrumb p{
+    /* border: 1px solid red; */
+    flex-basis: 40px;
+    line-height: 25px;
+    /* margin-bottom: 400px; */
+}
+
 /*-----------giftbox-pg------------*/
 
 /* .giftbox-pg{
@@ -14,20 +23,8 @@ nav > ul > li:nth-child(3) > a:hover{
     /* border: 1px solid black;
 } */
 
-.gift{
-    margin-top: 110px;
-    /* border: 1px solid black; */
-    height: 30px;
-    line-height: 30px;
-    width: 50px;
-    text-align: center;
-    color: #1F3CA1;
-    border-bottom: 1px solid #1F3CA1;
-    margin-bottom: 20px;
-}
-
 .gft{
-    height: 380px;
+    height: auto;
     /* border: 1px solid black; */
     display: flex;
     width: 100%;
@@ -38,7 +35,7 @@ nav > ul > li:nth-child(3) > a:hover{
 
 .pics5{
     width: 50%;
-    height: 380px;
+    height: auto;
     /* border: 1px solid black; */
     font-size: 0;
     margin-right: auto;
@@ -53,16 +50,19 @@ nav > ul > li:nth-child(3) > a:hover{
 }
 
 .pics5 img{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 .txt6{
-    width: 26%;
+    width: 50%;
     /* border: 1px solid black; */
     margin: 0 auto;
     animation: eee 1s 1.4s forwards;
     opacity: 0;
+    height: auto;
+    text-align: center;
+    height: auto;
 }
 
 @keyframes eee{
@@ -73,18 +73,139 @@ nav > ul > li:nth-child(3) > a:hover{
 .txt6 h2{
     height: 50px;
     line-height: 50px;
-    width: 200px;
+    width: 220px;
     border-bottom: 1px solid black;
     /* margin-bottom: 10px; */
-    /* margin: 0 auto; */
+    margin: 0 auto;
     box-sizing: border-box;
+    text-align: center;
+    /* border: 1px solid black; */
 }
 
 .txt6 ul{
-    margin-top: 20px;
+    padding-top: 20px;
+    text-align: left;
+    /* border: 1px solid red; */
+    width: 39%;
+    margin: 0 auto;
 }
 
-.txt6 li{
+.txt6 li:last-child{
 
 }
 
+
+/*---------- Media Query------- */
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+        width: 100%;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .gft{
+        width: 100%;
+        flex-direction: column;
+    }
+    .pics5{
+        width: 100%;
+    }
+    .txt6{
+        padding: 0;
+        margin: 0;
+        border: 1px solid #F5A651;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+        width: 100%;
+        height: 300px;
+        /* margin-bottom: 40px; */
+        margin-top: 40px;
+    }
+    .txt6 h2{
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 26.8px;
+        margin-top: 55px;
+    }
+    .txt6 ul{
+        /* border: 1px solid black; */
+        font-size: 14px;
+        width: 160px;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    div.wrapper{
+        width: 540px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .txt6{
+        /* border: 1px solid black; */
+        /* height: 300px; */
+    }
+    .txt6 h2{
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 26.8px;
+        
+    }
+    .txt6 ul{
+        /* border: 1px solid black; */
+        font-size: 14px;
+        width: 160px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    div.wrapper{
+        width: 720px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    .txt6{
+        /* border: 1px solid black; */
+        
+    }
+    .txt6 h2{
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 26.8px;
+    }
+    .txt6 ul{
+        /* border: 1px solid black; */
+        font-size: 14px;
+        width: 160px;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    div.wrapper{
+        width: 960px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    div.wrapper{
+        width: 1140px;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+    
+}
