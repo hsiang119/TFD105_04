@@ -38,13 +38,25 @@ p{
     overflow: hidden;
 }
 
+img{
+    max-width: 100%;
+}
+
+button.btn_switch{
+    border: 0;
+    background-color: white;
+}
+
+input{
+    /* border-radius: 0; */
+}
+
 /* ----------------nav-------------------- */
 
 header{
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 5;
     background-color: white;
 }
@@ -60,6 +72,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 nav h1{
@@ -67,6 +83,7 @@ nav h1{
     height: 75px;
     /* border: 1px solid black; */
     /* margin-left: 32px; */
+    /* margin-top: 5px; */
 }
 
 nav a{
@@ -85,7 +102,7 @@ h1 img{
     height: 100%;
 }
 
-nav ul{
+ul.menu{
     display: flex;
     width: 600px;
     /* border: 1px solid black; */
@@ -120,6 +137,112 @@ nav li:hover a{
     color: white;
 }
 
+button.btn_switch{
+    border: 0;
+    background-color: white;
+}
+
+/* ---------hamburger bar---------------- */
+/* hamburger icon */
+/* 基本按鈕樣式 */
+button.btn_switch{
+    /* border: 1px solid gray; */
+    width: 40px;
+    height: 40px;
+    
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: none;
+  }
+/* 每一條橫線的樣式 */
+button.btn_switch span.-hr{
+    height: 1px;
+    width: 80%;
+    background-color: #F5A651;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+  }
+  
+  /* 最上面那條線的樣式 */
+  button.btn_switch span.-hr.-top{
+    height: 2px;
+    width: 70%;
+    top: 25%;
+  }
+  
+  button.btn_switch span.-hr.-middle{
+    height: 1px;
+    width: 50%;
+    top: 46%;
+    /* display: none; */
+  }
+
+  /* 最下面那條線的樣式 */
+  button.btn_switch span.-hr.-bottom{
+    height: 2px;
+    width: 70%;
+    top: 70%;
+  }
+
+  /* -on 的狀態 */
+/* 上方的線 */
+button.btn_switch.-on span.-hr.-top{
+    transform-origin: top left;
+    top: 5px;
+    left: 6px;
+    width: 100%;
+    transform: rotate(45deg);
+}
+  /* 中間的線 */
+  button.btn_switch.-on span.-hr.-middle{
+    opacity: 0;
+  }
+  /* 下方的線 */
+  button.btn_switch.-on span.-hr.-bottom{
+    transform-origin: top left;
+    bottom: 5px;
+    left: 6px;
+    width: 100%;
+    transform: rotate(-45deg);
+    top: auto;
+  }
+
+/* label {
+    float: right;
+    padding-right: 50px;
+    line-height: 50px;
+    margin-right: 0;
+}
+label img {
+    width: 30px;   
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+    label {
+      display: none;
+    }
+    .menu {
+      float: right;
+      clear: none;
+      max-height: 50px;
+      background: #eee;
+    }  
+    li{
+        display: inline-block;
+    }
+    a{
+        padding: 0 15px;  
+    }
+      
+    
+} */
+
 /* -------footer-------- */
 
 footer{
@@ -133,7 +256,7 @@ footer{
 }
 
 .follow{
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     /* border: 1px solid black; */
@@ -141,7 +264,6 @@ footer{
     margin-bottom: 10px;
     padding-top: 10px;
     align-items: center;
-    
 }
 
 .follow h3{
@@ -178,3 +300,242 @@ i{
 .cop p{
     color: white; 
 }
+
+/* -------------- js ------------------- */
+.js-slide{
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.js-slide-l{
+    transform: translateX(-100%);
+}
+
+.js-slide-r{
+    transform: translateX(100%);
+}
+
+.js-slide-up{
+    transform: translateY(70%);
+}
+
+.js-slide-rotate-r{
+    transform: translateX(-70%) rotateX(720deg);
+}
+
+.js-slide-rotate-l{
+    transform: translateX(70%) rotateX(720deg);
+}
+
+.js-active{
+    transform: translate(0);
+    opacity: 1;
+}
+
+
+/* ------------- Media Query ------------------ */
+
+/* ----------- 小於576px ------------- */
+@media screen and (max-width: 575.98px){
+    nav{
+        width: 100%;
+    }
+    button.btn_switch{
+        display: inline-flex;
+        position: relative;
+    }
+    nav h1{
+        /* margin-left: 20px; */
+    }
+    ul.menu{
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        /* left: 0; */
+        right: 0;
+        top: 100px;
+        /* border: 1px solid black; */
+        height: 300px;
+        width: 90px;
+        text-align: center;
+    }
+    nav li{
+        /* flex-direction: column; */
+        /* width: 100px; */
+        /* height: auto; */
+        /* margin-left: 400px; */
+        /* margin-top: 100px; */
+        /* flex-basis: 300px; */
+        /* margin-left: auto; */
+        /* margin-left: auto; */
+    }
+    footer{
+        width: 100%;
+    }
+    footer div.follow{
+        width: 100%;
+    }
+    footer div.cop{
+        width: 100%;
+    }
+    footer div.cop p{
+        width: 94%;
+        margin: 0 auto;
+    }
+}
+
+/* ---------- 介於576px ~ 768px -------------- */
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    nav{
+        width: 540px;
+        margin: 0 auto;
+    }
+    button.btn_switch{
+        display: inline-flex;
+        position: relative;
+    }
+    ul.menu{
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        /* left: 0; */
+        right: 0;
+        top: 100px;
+        /* border: 1px solid black; */
+        height: 180px;
+        width: 90px;
+        text-align: center;
+    }
+    nav li{
+        /* flex-direction: column; */
+        /* width: 100px; */
+        /* height: auto; */
+        /* margin-left: 400px; */
+        /* margin-top: 100px; */
+        /* flex-basis: 300px; */
+        /* margin-left: auto; */
+        /* margin-left: auto; */
+    }
+    footer{
+        width: 100%;
+    }
+    footer div.follow{
+        width: 540px;
+        margin: 0 auto;
+    }
+    footer div.cop{
+        width: 540px;
+        margin: 0 auto;
+        
+        
+    }
+    footer div.cop p{
+        /* border: 1px solid black; */
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* ----------- 介於768px ~ 992px ------------- */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    nav{
+        width: 720px;
+        margin: 0 auto;
+    }
+    button.btn_switch{
+        display: none;
+    }
+    ul.menu{
+        display: flex !important;
+    }
+    footer{
+        width: 100%;
+    }
+    footer div.follow{
+        width: 720px;
+        margin: 0 auto;
+    }
+    footer div.cop{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+
+/* ------------------- 介於992xp ~ 1200px --------------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    nav{
+        width: 960px;
+        margin: 0 auto;
+    }
+    button.btn_switch{
+        display: none;
+    }
+    ul.menu{
+        display: flex !important;
+    }
+    footer{
+        width: 100%;
+    }
+    footer div.follow{
+        width: 960px;
+        margin: 0 auto;
+    }
+    footer div.cop{
+        width: 960px;
+        margin: 0 auto;
+    }   
+}
+
+/* -------------------- 介於1200px ~ 1400px ----------------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    nav{
+        width: 1140px;
+        margin: 0 auto;
+    }
+    button.btn_switch{
+        display: none;
+    }
+    ul.menu{
+        display: flex !important;
+    }
+    footer{
+        width: 100%;
+    }
+    footer div.follow{
+        width: 1140px;
+        margin: 0 auto;
+    }
+    footer div.cop{
+        width: 1140px;
+        margin: 0 auto;
+    }   
+}
+
+/* ------------- 大於1400px ----------------------- */
+/* @media screen and (min-width: 1400px){
+    nav{
+        width: 1320px;
+        margin: 0 auto;
+    }
+    button.btn_switch{
+        display: none;
+    }
+    ul.menu{
+        display: flex !important;
+    }
+    footer{
+        width: 100%;
+    }
+    footer div.follow{
+        width: 1320px;
+        margin: 0 auto;
+    }
+    footer div.cop{
+        width: 1320px;
+        margin: 0 auto;
+    }   
+} */
