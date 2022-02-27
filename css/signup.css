@@ -1,4 +1,6 @@
 @import url(../css/base.css);
+@import url(../css/breadcrumb.css);
+
 
 nav > ul > li:last-child > a{
     color:#F5A651;
@@ -24,7 +26,7 @@ nav > ul > li:last-child > a:hover{
 
 .siu{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     animation: qqq 1.3s forwards;
     opacity: 0;
@@ -39,7 +41,7 @@ nav > ul > li:last-child > a:hover{
     border: 1px soild black;
     display: block;
     width: 400px;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
     border: 1px solid #e5e5e5;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
@@ -51,7 +53,9 @@ nav > ul > li:last-child > a:hover{
 }
 
 .form2 p{
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+    /* border: 1px solid black; */
+    width: 100%;
 }
 
 .form2 input{
@@ -68,6 +72,16 @@ nav > ul > li:last-child > a:hover{
     border: 0;
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    border-radius: 0;
+    transition: .8s;
+}
+
+.form2 .email:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    -webkit-appearance: none;
 }
 
 .form2 .password{
@@ -80,6 +94,16 @@ nav > ul > li:last-child > a:hover{
     border: 0;
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.form2 .password:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    -webkit-appearance: none;
 }
 
 .form2 .password2{
@@ -92,6 +116,16 @@ nav > ul > li:last-child > a:hover{
     border: 0;
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.form2 .password2:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    -webkit-appearance: none;
 }
 
 .form2 .name{
@@ -104,7 +138,18 @@ nav > ul > li:last-child > a:hover{
     border: 0;
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    border-radius: 0;
+    transition: 1s;
 }
+
+.form2 .name:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    -webkit-appearance: none;
+}
+
 
 .form2 .phone{
     display: block;
@@ -116,6 +161,16 @@ nav > ul > li:last-child > a:hover{
     border: 0;
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.form2 .phone:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    -webkit-appearance: none;
 }
 
 .form2 .address{
@@ -127,32 +182,127 @@ nav > ul > li:last-child > a:hover{
     border: 0;
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.form2 .address:focus{
+    border-color: #DEA43E;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(250,203,70,.6);
+    -webkit-appearance: none;
+}
+
+.form2 li:last-child{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .form2 .submit{
     /* display: block; */
+    /* border: 1px solid black; */
     width: 75px;
     height: 30px;
     line-height: 30px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 25px;
+    /* margin-top: 20px; */
+    /* margin-left: 25px; */
+    margin: 0 auto;
     font-size: 16px;
     border: 0;
     background-color: #F5A651;
     color: white;
+    -webkit-appearance: none;
+    border-radius: 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .form2 p:not(.a, .b){
-    margin-left: 25px;
+    /* margin-left: 25px; */
+    padding-left: 25px;
+}
+
+.form2 > p.a{
+    margin-top: 20px;
 }
 
 .form2 .a, .b{
     /* border: 1px solid black; */
     font-size: 20px;
-    width: 130px;
+    width: 100%;
     height: 30px;
     margin: 0 auto;
     text-align: center;
     line-height: 30px;
+    margin-bottom: 5px;
+}
+
+/* ----------------------- Media Query ------------------------------ */
+
+/* ----------- 小於576px --------------------- */
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+        width: 100%;
+    }
+    ul.form2{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    ul.form2 .a, ul.form2 .email, ul.form2 .password, ul.form2 .password2, ul.form2 .b, ul.form2 .name, ul.form2 .phone, ul.form2 .address{
+        width: 87.5%;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+    }
+    ul.form2 .password2{
+        margin-bottom: 10px;
+    }
+    .form2 .submit{
+        padding: 0;
+    }
+    .form2 p.a, .form2 p.b{
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    ul.form2 p{
+        margin: 0 auto;
+        padding-left: 25px;
+    } 
+}                                                               
+
+/* ---------- 介於576px ~ 768px -------------- */
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    div.wrapper{
+        width: 540px;
+        margin: 0 auto;
+    }
+}
+
+/* ----------- 介於768px ~ 992px ------------- */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    div.wrapper{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+
+/* -------- 介於992xp ~ 1200px --------------- */
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    div.wrapper{
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* -------------------- 介於1200px ~ 1400px ----------------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    div.wrapper{
+        width: 1140px;
+        margin: 0 auto;
+    }
 }
