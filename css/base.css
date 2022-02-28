@@ -212,37 +212,6 @@ button.btn_switch.-on span.-hr.-top{
     top: auto;
   }
 
-/* label {
-    float: right;
-    padding-right: 50px;
-    line-height: 50px;
-    margin-right: 0;
-}
-label img {
-    width: 30px;   
-    vertical-align: middle;
-}
-
-@media screen and (min-width: 768px) {
-    label {
-      display: none;
-    }
-    .menu {
-      float: right;
-      clear: none;
-      max-height: 50px;
-      background: #eee;
-    }  
-    li{
-        display: inline-block;
-    }
-    a{
-        padding: 0 15px;  
-    }
-      
-    
-} */
-
 /* -------footer-------- */
 
 footer{
@@ -357,19 +326,14 @@ i{
         right: 0;
         top: 100px;
         /* border: 1px solid black; */
-        height: 300px;
+        height: 230px;
         width: 90px;
         text-align: center;
+        background-color: #F6EFE7;
     }
-    nav li{
-        /* flex-direction: column; */
-        /* width: 100px; */
-        /* height: auto; */
-        /* margin-left: 400px; */
-        /* margin-top: 100px; */
-        /* flex-basis: 300px; */
-        /* margin-left: auto; */
-        /* margin-left: auto; */
+    nav ul a:not(nav li:last-child a){
+        /* color: white; */
+        margin-bottom: 10px;
     }
     footer{
         width: 100%;
@@ -409,6 +373,7 @@ i{
         height: 180px;
         width: 90px;
         text-align: center;
+        background-color: #F6EFE7;
     }
     nav li{
         /* flex-direction: column; */
