@@ -51,6 +51,46 @@ input{
     /* border-radius: 0; */
 }
 
+/* go to top */
+.back-to-top {
+    display: block;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    display: none; 
+    position: fixed; 
+
+    bottom: 20px; 
+
+    right: 20px;  
+
+    z-index: 99; 
+
+    border: 1px solid #333;
+
+    outline: none; 
+
+    /* background-color: #F5A651;  */
+
+    /* color: #fff;  */
+
+    cursor: pointer; 
+
+    padding: 0; 
+
+    border-radius: 50%;
+    opacity: .4; 
+}
+
+.back-to-top:hover{
+    opacity: 1;    
+}
+
+.back-to-top img{
+    width: 100%;
+}
+
+
 /* ----------------nav-------------------- */
 
 header{
@@ -76,6 +116,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 5;
+    /* background-image: linear-gradient(#F5A651, #F6EFE7); */
 }
 
 nav h1{
@@ -327,10 +368,20 @@ i{
         top: 100px;
         /* border: 1px solid black; */
         height: 230px;
-        width: 90px;
+        width: 100%;
+        /* margin: 0 auto; */
         text-align: center;
-        background-color: #F6EFE7;
+        /* background-color: #F6EFE7; */
+        background-image: linear-gradient(-70deg, #F5A651, #F6EFE7); 
+        background-color: #fff;
+        box-shadow: 0 0 3px 1px #F5A651;
     }
+    ul.menu a{
+        margin: 0 auto;
+    }
+    .is-active nav.ham {
+        background-color: rgba(0, 0, 0, .5);
+      }
     nav ul a:not(nav li:last-child a){
         /* color: white; */
         margin-bottom: 10px;
@@ -371,19 +422,15 @@ i{
         top: 100px;
         /* border: 1px solid black; */
         height: 180px;
-        width: 90px;
+        width: 100%;
         text-align: center;
-        background-color: #F6EFE7;
+        /* background-color: #F6EFE7; */
+        background-color: #fff;
+        box-shadow: 0 0 3px 1px #F5A651;
+        background-image: linear-gradient(-70deg, #F5A651, #F6EFE7);
     }
-    nav li{
-        /* flex-direction: column; */
-        /* width: 100px; */
-        /* height: auto; */
-        /* margin-left: 400px; */
-        /* margin-top: 100px; */
-        /* flex-basis: 300px; */
-        /* margin-left: auto; */
-        /* margin-left: auto; */
+    ul.menu a{
+        margin: 0 auto;
     }
     footer{
         width: 100%;
