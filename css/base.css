@@ -372,12 +372,13 @@ i{
         /* margin: 0 auto; */
         text-align: center;
         /* background-color: #F6EFE7; */
-        background-image: linear-gradient(-70deg, #F5A651, #F6EFE7); 
+        background-image: linear-gradient(#FFE4C4, #F6EFE7);
         background-color: #fff;
-        box-shadow: 0 0 3px 1px #F5A651;
+        /* box-shadow: 0 0 3px 1px #F5A651;  */
     }
     ul.menu a{
         margin: 0 auto;
+        width: 100%;
     }
     nav ul a:not(nav li:last-child a){
         /* color: white; */
@@ -423,11 +424,12 @@ i{
         text-align: center;
         /* background-color: #F6EFE7; */
         background-color: #fff;
-        box-shadow: 0 0 3px 1px #F5A651;
-        background-image: linear-gradient(-70deg, #F5A651, #F6EFE7);
+        /* box-shadow: 0 0 3px 1px #F5A651; */
+        background-image: linear-gradient(#FFE4C4, #F6EFE7);
     }
     ul.menu a{
         margin: 0 auto;
+        width: 100%;
     }
     footer{
         width: 100%;
