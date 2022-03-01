@@ -40,7 +40,7 @@
     /* border: 1px solid red; */
     text-align: center;
     width: 100%;
-    color: #1F3CA1;
+    color: 	#d3d3d3;
     font-size: 14px;
     line-height: 25.59px;
 }
@@ -51,7 +51,7 @@
 }
 
 .breadcrumb > li:first-child > a:hover{
-    border-bottom: 1px solid #1F3CA1;
+    border-bottom: 1px solid black;
 }
 
 .breadcrumb li+li::before{
@@ -60,7 +60,7 @@
     /* padding-right: 20px; */
     /* top: -5px;  */
     content: "/";
-    color: #1F3CA1;
+    color: #d3d3d3;
     /* padding-right: 5px; */
     /* border: 1px solid red; */
     line-height: 25.59px;
@@ -68,7 +68,7 @@
 }
 
 .breadcrumb i{
-    color: #1F3CA1;
+    color: 	#d3d3d3;
     font-size: 16px;
 }
 
@@ -78,7 +78,7 @@
     text-align: center;
     line-height: 25.59px;
     font-size: 14px;
-    color: #1F3CA1;
+    color: 	#d3d3d3;
 }
 
 /* --------------  Media Query ---------------------------- */
