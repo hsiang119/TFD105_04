@@ -567,19 +567,21 @@ div.row{
     color: white;
   }
   div.btn-group{
-      margin-top: 20px;
+      margin-top: 40px;
       padding-bottom: 20px;
+      padding-top: 20px;
       /* margin-bottom: 20px; */
       width: 100%;
+      /* height: 50px; */
       /* position: relative; */
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 div.btn-group button{
-    /* border: 1px solid black; */
-    position: relative;
-    top: 50%;  
-    left: 44.5%;
-    transform: translate(-50%, -50%);
     font-size: 16px;
+    margin: 0 10px;
 }
 
 /* ----------- 小於576px ------------- */
@@ -623,6 +625,14 @@ div.btn-group button{
         text-align: center;
         /* perspective: 500px; */
         box-sizing: border-box;
+    }
+    @keyframes shining{
+        0%, 50% {
+          left: 100%
+        }
+        100% {
+          left: 0%;
+        }
     }
     div.slogan .txt1{
         /* border: 1px solid black; */
@@ -725,10 +735,10 @@ div.btn-group button{
     }
     div.btn-group button{
         /* border: 1px solid black; */
-        position: relative;
+        /* position: relative;
         top: 50%;  
         left: 29%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
     }
     div#watch h2{
         font-size: 26.8px;
@@ -899,10 +909,10 @@ div.btn-group button{
     }
     div.btn-group button{
         /* border: 1px solid black; */
-        position: relative;
+        /* position: relative;
         top: 50%;  
         left: 40%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
     }
     .banner h1{
         /* width: 100%; */
@@ -1019,10 +1029,10 @@ div.btn-group button{
     }
     div.btn-group button{
         /* border: 1px solid black; */
-        position: relative;
+        /* position: relative;
         top: 50%;  
         left: 43%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
     }
     .banner h1{
         /* position: fixed;
@@ -1083,10 +1093,10 @@ div.btn-group button{
     }
     div.btn-group button{
         /* border: 1px solid black; */
-        position: relative;
+        /* position: relative;
         top: 50%;  
         left: 44%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
     }
 }
 
