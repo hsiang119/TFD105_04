@@ -10,6 +10,10 @@ nav > ul > li:last-child > a:hover{
     color: white;
 }
 
+
+  
+
+
 /*--------------login/out--------------*/
 
 .bre{
@@ -128,19 +132,10 @@ input.password:focus{
     border: 0;
     background-color: #F5A651;
     color: white;
-    /* display: block;
-    margin: 0 auto; */
-    /* margin-top: 20px; */
-    /* float: left; */
-    /* display: flex; */
     text-align: center;
     font-size: 16px;
-    /* margin-top: 20px; */
-    /* margin-left: 140px; */
     border-radius: 5px;
-    /* appearance: none; */
     -webkit-appearance: none;
-    /* border-radius: 0; */
 }
 
 ul.form1 > li:nth-of-type(3){
@@ -160,10 +155,23 @@ ul.form1 > li:nth-of-type(3){
     line-height: 30px;
     border-radius: 5px;
     margin-left: 10px;
+    transition: 1s;
+    /* transform: translateY(-5px); */
+    animation: yui .8s linear infinite;
+    /* transform-origin: left top; */
 }
+
+@keyframes yui{
+    0%{ transform: translate(-1px); }
+    30%{ transform: translate(-2px); }
+    70%{ transform: translate(-4px); }
+    100%{ transform: translate(-5px); }
+}
+
 
 .form1 .login{
     margin-right: 10px;
+    cursor: pointer;
 }
 
 /*---------- Media Query------- */
