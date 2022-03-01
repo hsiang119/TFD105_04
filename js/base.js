@@ -35,18 +35,43 @@ document.addEventListener('DOMContentLoaded', function(){
     let hamburger_icon = document.getElementsByClassName("btn_switch")[0];  
     $("button.btn_switch").on("click", function () {
         hamburger_icon.classList.toggle("-on");
-        $("ul.menu").slideToggle(800);
+        // document.getElementById('nav#ham').classList.toggle('.is-active');
+        $("ul.menu").slideToggle(600);
     });
 });
 
-// DOM 載入完成之後執行
-// document.addEventListener('DOMContentLoaded', function(){
-  
-//     // 按鈕狀態的切換
-//     let hamburger_icon = document.getElementsByClassName("btn_switch")[0];
-//     console.log(hamburger_icon);
-//     hamburger_icon.addEventListener("click", function(){
-//       hamburger_icon.classList.toggle("-on");
-//     });
-    
-//   });
+
+// go to top
+document.addEventListener('DOMContentLoaded', function () {
+    $(function () {
+
+        var $win = $(window);
+
+        var $backToTop = $('.js-back-to-top');
+
+        // 當user滾動到離頂部200像素時，展示回到頂部按鈕
+
+        $win.scroll(function () {
+
+            if ($win.scrollTop() > 200) {
+
+                $backToTop.show();
+
+            } else {
+
+                $backToTop.hide();
+
+            }
+
+        });
+
+        // 當user點擊按鈕時，通過動畫效果返回頭部
+
+        $backToTop.click(function () {
+
+            $('html, body').animate({ scrollTop: 0 }, 700);
+
+        });
+
+    });
+});
