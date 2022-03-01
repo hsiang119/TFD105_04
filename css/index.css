@@ -15,7 +15,6 @@ button.btn_switch{
     height: calc(100vh - 100px);
     /* padding-top: calc(100% * 9 / 16 ); */
     position: relative;
-
     animation: yyy 1.5s .5s forwards;
     opacity: 0;
 }
@@ -62,7 +61,7 @@ button.btn_switch{
     background-color: Black;
     box-shadow: 2px 2px 3px Black;
     animation: goBorder 2s infinite;
-  }
+}
 
 .banner h1 span{
     font-size: 40px;
@@ -452,20 +451,19 @@ span:nth-child(10) {
 
 /* loading畫面 */
 #loading{
+    background-image: url(../img/loadbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* background-color: black; */
-    /* opacity: .7; */
-    background-image: url(../img/loadbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center center; */
     color: #fff;
     z-index: 100;
 }
+
 #loading .loadingAnimation{
     width: 30px;
     height: 30px;
