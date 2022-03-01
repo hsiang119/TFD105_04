@@ -240,6 +240,12 @@ button#choose_file i{
         width: 95%;
         margin: 0 auto;
     }
+    ul.form .a, ul.form .email, ul.form .password, ul.form .password2, ul.form .b, ul.form .name, ul.form .phone, ul.form .address, ul.form input.content{
+        width: 87.5%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        /* border: 1px solid black; */
+    }
     .submit{
         display: block;
         width: 75px;
