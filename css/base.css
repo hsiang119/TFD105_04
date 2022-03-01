@@ -379,9 +379,6 @@ i{
     ul.menu a{
         margin: 0 auto;
     }
-    .is-active nav.ham {
-        background-color: rgba(0, 0, 0, .5);
-      }
     nav ul a:not(nav li:last-child a){
         /* color: white; */
         margin-bottom: 10px;
