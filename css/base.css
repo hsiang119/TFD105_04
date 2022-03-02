@@ -36,6 +36,7 @@ p{
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    /* position: relative; */
 }
 
 img{
@@ -51,7 +52,7 @@ input{
     /* border-radius: 0; */
 }
 
-/* go to top */
+/* back to top */
 .back-to-top {
     display: block;
     width: 65px;
@@ -59,27 +60,20 @@ input{
     text-align: center;
     display: none; 
     position: fixed; 
-
     bottom: 20px; 
-
     right: 20px;  
-
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
     z-index: 99; 
-
     border: 1px solid #333;
-
     outline: none; 
-
     /* background-color: #F5A651;  */
-
     /* color: #fff;  */
-
     cursor: pointer; 
-
     padding: 0; 
-
     border-radius: 50%;
-    opacity: .4; 
+    opacity: .5; 
 }
 
 .back-to-top:hover{
