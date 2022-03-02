@@ -50,7 +50,7 @@ body{
 
 .flip{
     /* border: 1px solid #e5e5e5; */
-    width: 300px;
+    width: 305px;
     height: 280px;
     box-sizing: border-box;
     /* padding: 5px; */
@@ -61,6 +61,7 @@ body{
     /* animation: uuu 1.5s .5s forwards;
     opacity: 0; */
     margin-bottom: 20px;
+    
 }
 
 
